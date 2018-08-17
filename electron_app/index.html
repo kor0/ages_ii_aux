@@ -9,10 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
     <title>Rastreamento</title>
-    <!-- VIS SCRIPT-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-    <!-- PLOT OS VIS-->
-    <script type="text/javascript" src="plot.js"></script>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME ICONS  -->
@@ -47,10 +43,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="page-head-line">Dashboard</h4>
-                    <body onload="drawVisualization()">
-                        <div id="mygraph"></div>
+                    <div id="main" style="width:800px; height:400px;"></div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -66,10 +60,12 @@
         </div>
     </footer>
     <!-- FOOTER SECTION END-->
-    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCRIPTS AT THE BOTTOM TO REDUCE THE LOADING TIME  -->    
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/echarts.js"></script>
+    <script type="text/javascript" src="assets/js/echarts-gl.min.js"></script>
+    <script type="text/javascript" src="3d_plot.js"></script>
 </body>
 </html>
