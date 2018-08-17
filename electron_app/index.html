@@ -24,7 +24,7 @@
 </head>
 <body>
     <section class="menu-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
@@ -33,19 +33,28 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- MENU SECTION END-->
-    <div class="content-wrapper">
-        <div class="container">
+    
+    <div class="content-wrapper">      
+        <div class="container-fluid">         
             <div class="row">
-                <div class="col-md-12">
-                    <h4 class="page-head-line">Dashboard</h4>
-                    <div id="main" style="width:800px; height:400px;"></div>
+                <h4 class="col-md-12 page-head-line">Dashboard</h4>
+                <div class="col-md-6">
+                    <div class="col-md-12 ">
+                        <div class="dg main"></div>
+                        <div id="main" class="plot panel panel-plot"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-md-12 ">
+                            <div id="2d" class="plot panel panel-plot"></div>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- CONTENT-WRAPPER SECTION END-->
@@ -55,7 +64,6 @@
                 <div class="col-md-12">
                     &copy; 2018 Rastreamento | By : AGES
                 </div>
-
             </div>
         </div>
     </footer>
@@ -66,6 +74,8 @@
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/echarts.js"></script>
     <script type="text/javascript" src="assets/js/echarts-gl.min.js"></script>
-    <script type="text/javascript" src="3d_plot.js"></script>
+    
+    <script type="text/javascript" src="plots/3d_plot.js"></script>
+    <script type="text/javascript" src="plots/2d_plot.js"></script>
 </body>
 </html>

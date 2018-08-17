@@ -313,3 +313,23 @@ footer {
 .btn-google {
     background-color: #c32f10;
 }
+
+
+/* AGES ADJUSTMENTS */
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.plot{
+    display: flex;
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+    min-height: 400px; 
+}
+
+.panel-plot{
+    background-color: #3D3D3D;
+    border-color: #fff;
+}

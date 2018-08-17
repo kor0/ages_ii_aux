@@ -119,6 +119,9 @@ $.getJSON('nutrients.json', function (_data) {
     var max = getMaxOnExtent(data);
     myChart.setOption({
         tooltip: {},
+        toolbox: {
+            show:true
+        },
         visualMap: [{
             top: 10,
             calculable: true,
@@ -202,7 +205,13 @@ $.getJSON('nutrients.json', function (_data) {
             }
         }]
     });
-});;
-if (option && typeof option === "object") {
-    myChart.setOption(option, true);
-}
+});
+myChart.setOption(config)
+// This makes the plots responsive
+// Don't mess here
+window.onresize = function() {
+    $(".plot").each(function(){
+        var id = $(this).attr('_echarts_instance_');
+        window.echarts.getInstanceById(id).resize();
+    });
+};
