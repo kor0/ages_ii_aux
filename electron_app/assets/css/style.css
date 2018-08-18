@@ -329,7 +329,18 @@ footer {
     min-height: 400px; 
 }
 
+.plot-1d{
+    min-height  : 100px;
+}
+
+.border-adjust {
+    padding-left : 30px;
+    padding-right: 30px;
+}
+
 .panel-plot{
+    padding: 2%;
     background-color: #3D3D3D;
     border-color: #fff;
 }
+
