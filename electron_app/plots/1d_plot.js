@@ -18,7 +18,6 @@ data = data.map(function (item) {
 option = {
     title: {
         text: 'Punch Card of Github',
-        link: 'https://github.com/pissang/echarts-next/graphs/punch-card'
     },
     legend: {
         data: ['Punch Card'],
