@@ -10,11 +10,11 @@ const {app, BrowserWindow} = require('electron')
     win = new BrowserWindow({
       width: 800, 
       height: 600,
-      icon: path.join(__dirname, 'assets/img/logo.pnpip install csvkitg')
+      icon: path.join(__dirname, 'assets/img/logo.png')
     })
   
     // and load the index.html of the app.
-    win.loadFile('login.html')
+    win.loadFile('index.html')
   
     // Open the DevTools.
     win.webContents.openDevTools()
